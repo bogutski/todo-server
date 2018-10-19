@@ -6,10 +6,10 @@
 	},
 	"item": [
 		{
-			"name": "GROUP",
+			"name": "TODO",
 			"item": [
 				{
-					"name": "Create Group",
+					"name": "Create Todo",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -24,22 +24,22 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Js28-8\",\n\t\"description\": \"Some text\"\n}"
+							"raw": "{\n\t\"name\": \"First group\",\n\t\"description\": \"Some text\"\n}"
 						},
 						"url": {
-							"raw": "{{host}}/group",
+							"raw": "{{host}}/todo",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"group"
+								"todo"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Edit Group",
+					"name": "Edit Todo",
 					"request": {
 						"method": "PATCH",
 						"header": [
@@ -57,12 +57,12 @@
 							"raw": "{\n\t\"name\": \"----3-----\",\n\t\"members\": [\n            \"5b7366b42ffb85d6053b8649\", \n            \"5b7ba562c59f6d003a075b09\"\n        ]\n}"
 						},
 						"url": {
-							"raw": "{{host}}/group/5baeb560902190562709dd66",
+							"raw": "{{host}}/todo/5baeb560902190562709dd66",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"group",
+								"todo",
 								"5baeb560902190562709dd66"
 							]
 						}
@@ -70,7 +70,7 @@
 					"response": []
 				},
 				{
-					"name": "Delete Group",
+					"name": "Delete Todo",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -88,12 +88,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{host}}/group/5baeaa0cb249d754b7bf15ea",
+							"raw": "{{host}}/todo/5baeaa0cb249d754b7bf15ea",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"group",
+								"todo",
 								"5baeaa0cb249d754b7bf15ea"
 							]
 						}
@@ -101,7 +101,7 @@
 					"response": []
 				},
 				{
-					"name": "Get all Groups",
+					"name": "Get all Todos",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -115,19 +115,19 @@
 							"raw": "{\n\t\"name\": \"Js2\"\n}"
 						},
 						"url": {
-							"raw": "{{host}}/group",
+							"raw": "{{host}}/todo",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"group"
+								"todo"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Get by id",
+					"name": "Get Todo by id",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -152,6 +152,28 @@
 						}
 					},
 					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4bb04abf-20bd-4b45-b61b-6c749fa0a7e0",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "efb8100f-434b-439f-a26c-d9c76a227faf",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
