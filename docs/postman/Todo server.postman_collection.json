@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "9e9ac6f4-77b3-480b-8aae-664c5ae17cfc",
+		"name": "Todo server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GROUP",
+			"item": [
+				{
+					"name": "Create Group",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Js28-8\",\n\t\"description\": \"Some text\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/group",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"group"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Group",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"----3-----\",\n\t\"members\": [\n            \"5b7366b42ffb85d6053b8649\", \n            \"5b7ba562c59f6d003a075b09\"\n        ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}/group/5baeb560902190562709dd66",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"group",
+								"5baeb560902190562709dd66"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Group",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/group/5baeaa0cb249d754b7bf15ea",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"group",
+								"5baeaa0cb249d754b7bf15ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Groups",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Js2\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/group",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"group"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Js2\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/group/5bc0185bd4006d3caf2bd07f",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"group",
+								"5bc0185bd4006d3caf2bd07f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INFO",
+			"item": [
+				{
+					"name": "Info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Js2\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/info",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"info"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6b0d3447-2b46-4bd4-9c44-427c5659fa4e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae02d678-52b1-4c69-bf2e-6d0949c058d9",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a6350efd-0332-427e-905f-e01e088e12ca",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "97e31d3d-48a9-4990-929e-6454725f771f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

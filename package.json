@@ -1,0 +1,54 @@
+{
+  "name": "todo-",
+  "version": "1.0.0",
+  "description": "Todo server",
+  "main": "index.js",
+  "engines": {
+    "node": "9.10.0"
+  },
+  "scripts": {
+    "heroku-postbuild": "npm install",
+    "test": "jest",
+    "clean": "rimraf build/",
+    "build": "npm run clean && babel src -d build",
+    "start": "npm run build && node build",
+    "dev": "nodemon --inspect -r dotenv/config -r babel-register src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogutski/codewars-analytics.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bogutski/codewars-analytics/issues"
+  },
+  "homepage": "https://github.com/bogutski/codewars-analytics#readme",
+  "dependencies": {
+    "axios": "^0.19.0-beta.1",
+    "body-parser": "^1.18.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "express": "^5.0.0-alpha.6",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.1",
+    "morgan": "^1.9.1",
+    "multer": "^2.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^7.0.0-beta.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^7.0.0-beta.3",
+    "babel-register": "^7.0.0-beta.3",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.2",
+    "rimraf": "^2.6.2"
+  }
+}
