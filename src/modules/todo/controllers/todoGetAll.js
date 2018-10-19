@@ -1,7 +1,7 @@
-import Group from '../groupModel';
+import Todo from '../todoModel';
 
-const groupGetAll = (req, res) => {
-  Group.find()
+const todoGetAll = (req, res) => {
+  Todo.find()
     .populate({
       path: 'members',
       // match: { age: { $gte: 21 } },
@@ -19,4 +19,4 @@ const groupGetAll = (req, res) => {
     });
 };
 
-export default groupGetAll;
+export default todoGetAll;

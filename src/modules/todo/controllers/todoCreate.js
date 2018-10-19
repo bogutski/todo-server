@@ -1,19 +1,20 @@
 import mongoose from 'mongoose';
-import Group from '../groupModel';
+import Todo from '../todoModel';
 
-export default async function groupCreate(req, res) {
+export default async function todoCreate(req, res) {
   const _id = new mongoose.Types.ObjectId();
 
-  const group = new Group({
+  const todo = new Todo({
     _id,
     name: req.body.name,
     description: req.body.description,
+    done: req.body.done,
   });
 
-  group
+  todo
     .save()
     .then(() => {
-      res.status(201).json('Group created');
+      res.status(201).json('Todo created');
     })
     .catch(err => {
       res.status(500).json(err);
