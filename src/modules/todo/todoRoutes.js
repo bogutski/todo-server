@@ -9,13 +9,9 @@ import todoDeleteById from './controllers/todoDeleteById';
 const router = Router();
 
 router.get('/', todoGetAll);
-
 router.post('/', todoCreate);
-
 router.get('/:todoId', todoGetById);
-
 router.patch('/:todoId', todoUpdateById);
-
 router.delete('/:todoId', todoDeleteById);
 
 export default router;

@@ -2,13 +2,13 @@ import Todo from '../todoModel';
 
 const todoGetAll = (req, res) => {
   Todo.find()
-    .populate({
-      path: 'members',
-      // match: { age: { $gte: 21 } },
-      // Explicitly exclude `_id`, see http://bit.ly/2aEfTdB
-      select: 'codewarsId -_id',
-      // options: { limit: 5 },
-    })
+    // .populate({ // Feature like JOIN in SQL
+    // path: 'members',
+    // match: { age: { $gte: 21 } },
+    // Explicitly exclude `_id`, see http://bit.ly/2aEfTdB
+    // select: 'codewarsId -_id',
+    // options: { limit: 5 },
+    // })
     .select('-__v')
     .exec()
     .then(docs => {

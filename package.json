@@ -8,7 +8,6 @@
   },
   "scripts": {
     "heroku-postbuild": "npm install",
-    "test": "jest",
     "clean": "rimraf build/",
     "build": "npm run clean && babel src -d build",
     "start": "npm run build && node build",
