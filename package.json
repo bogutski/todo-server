@@ -25,14 +25,14 @@
   "homepage": "https://github.com/bogutski/todo-server#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
     "express": "^5.0.0-alpha.6",
     "lodash": "^4.17.11",
     "mongoose": "^5.3.4",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "babel": "^6.23.0",
     "babel-cli": "^7.0.0-beta.3",
     "babel-eslint": "^10.0.1",
