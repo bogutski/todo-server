@@ -42,6 +42,40 @@
 					"response": []
 				},
 				{
+					"name": "Set status Todo by Id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"done\": false\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/todo/5bc9653573011cdfd2f39158",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"todo",
+								"5bc9653573011cdfd2f39158"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Edit Todo",
 					"request": {
 						"method": "PATCH",
