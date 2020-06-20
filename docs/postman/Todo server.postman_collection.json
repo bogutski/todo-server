@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "9e9ac6f4-77b3-480b-8aae-664c5ae17cfc",
+		"_postman_id": "e4489886-bf28-48ca-b274-93b2e36966a3",
 		"name": "Todo server",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -24,7 +24,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"First group\",\n\t\"description\": \"Some text\"\n}"
+							"raw": "{\n\t\"name\": \"First group 0000\",\n\t\"description\": \"Some text\"\n}",
+							"options": {
+								"raw": {}
+							}
 						},
 						"url": {
 							"raw": "{{host}}/todo",
@@ -54,16 +57,19 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"----3-----\",\n\t\"members\": [\n            \"5b7366b42ffb85d6053b8649\", \n            \"5b7ba562c59f6d003a075b09\"\n        ]\n}"
+							"raw": "{\n\t\"name\": \"----31111-----\",\n\t\"description\": \"-----------\"\n}",
+							"options": {
+								"raw": {}
+							}
 						},
 						"url": {
-							"raw": "{{host}}/todo/5baeb560902190562709dd66",
+							"raw": "{{host}}/todo/5eee4ba31ae8cc7d03444277",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"todo",
-								"5baeb560902190562709dd66"
+								"5eee4ba31ae8cc7d03444277"
 							]
 						}
 					},
@@ -85,16 +91,19 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "",
+							"options": {
+								"raw": {}
+							}
 						},
 						"url": {
-							"raw": "{{host}}/todo/5baeaa0cb249d754b7bf15ea",
+							"raw": "{{host}}/todo/5ee6d39241e562affd941580",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"todo",
-								"5baeaa0cb249d754b7bf15ea"
+								"5ee6d39241e562affd941580"
 							]
 						}
 					},
@@ -110,10 +119,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Js2\"\n}"
-						},
 						"url": {
 							"raw": "{{host}}/todo",
 							"host": [
@@ -136,18 +141,14 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Js2\"\n}"
-						},
 						"url": {
-							"raw": "{{host}}/group/5bc0185bd4006d3caf2bd07f",
+							"raw": "{{host}}/todo/5eee4ba31ae8cc7d03444277",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"group",
-								"5bc0185bd4006d3caf2bd07f"
+								"todo",
+								"5eee4ba31ae8cc7d03444277"
 							]
 						}
 					},
@@ -175,7 +176,8 @@
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "INFO",
@@ -190,10 +192,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Js2\"\n}"
-						},
 						"url": {
 							"raw": "{{host}}/info",
 							"host": [
@@ -228,7 +226,8 @@
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"event": [
@@ -252,5 +251,6 @@
 				]
 			}
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
